@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# != 2 ]
+  then
+    echo "Incorrect parameters"
+    echo "To call lc, please use the format: 'lc file1 file2', where file1 is the file you would like to remove capital letters from, and file2 is a file you would like to create from file1 with capital letters changed to lowercase"
+fi
+
+if [ $# == 2 ]
+  then
+    makeLower < $1 > $2
+fi
